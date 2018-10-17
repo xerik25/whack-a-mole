@@ -3,3 +3,36 @@
 
 /* Start */
 .start { }
+
+/* Gameboard */
+.gameBoard { 
+    display: flex;
+    width: 400px;
+    flex-direction: row;
+    text-align: center;
+    background-color: black;
+}
+.gameBoard__hole { 
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+}
+.gameBoard__mound {
+    background: url(/assets/mole-hole.png);
+    background-position: right 5px bottom 0;
+    background-size: 95%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.gameBoard__mole {
+    background-image: url(/assets/mole.png);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 100%;
+
+    transform: translate(0px, -27%);
+    transition: 1s ease-in-out;
+ }
