@@ -1,0 +1,23 @@
+{
+  "name": "whack-a-mole",
+  "version": "1.0.0",
+  "description": "whack a mole game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server --entry-file=src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xerik25/whack-a-mole.git"
+  },
+  "author": "Landon Cline",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xerik25/whack-a-mole/issues"
+  },
+  "homepage": "https://github.com/xerik25/whack-a-mole#readme",
+  "dependencies": {
+    "live-server": "^1.2.0"
+  }
+}
