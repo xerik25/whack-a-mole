@@ -16,15 +16,18 @@
     width: 120px;
     height: 120px;
     overflow: hidden;
+    position: relative;
 }
 .gameBoard__mound {
     background: url(/assets/mole-hole.png);
     background-position: right 5px bottom 0;
     background-size: 95%;
     background-repeat: no-repeat;
-    height: 100%;
     width: 100%;
-    position: relative;
+    height: 40px;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
 }
 .gameBoard__mole {
     background-image: url(/assets/mole.png);
@@ -33,6 +36,6 @@
     background-position: top;
     height: 100%;
 
-    transform: translate(0px, -27%);
+    transform: translate(0px, 77%);
     transition: 1s ease-in-out;
  }
