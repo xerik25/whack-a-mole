@@ -46,6 +46,7 @@ body {
     background-position: top;
     transform: translate(0px, 77%);
     transition: 1s ease-in-out;
+    cursor: pointer;
  }
 
 /* Buttons */
