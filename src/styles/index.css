@@ -1,6 +1,6 @@
 /* Base */
 body {
-    font-size: 2vmin;
+    font-size: 16px;
 }
 
 /* Title */
@@ -11,7 +11,6 @@ body {
 /* Gameboard */
 .gameBoard { 
     display: flex;
-    width: 400px;
     flex-flow: row wrap;
     justify-content: space-evenly;
     margin: 1rem auto;
@@ -23,8 +22,8 @@ body {
  }
 .gameBoard__hole { 
     position: relative;
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     overflow: hidden;
 }
 .gameBoard__mound {
@@ -32,7 +31,7 @@ body {
     bottom: 0;
     z-index: 1;
     width: 100%;
-    height: 34px;
+    height: 29px;
     background: url(/assets/mole-hole.png);
     background-position: right 5px bottom 0;
     background-size: 95%;
@@ -71,3 +70,10 @@ body {
  .flex--spaceEvenly{
      justify-content: space-evenly;
  }
+
+ /* Mobile */
+@media only screen and (min-width: 600px) {
+    .gameBoard {
+        width: 400px;
+    }
+}
