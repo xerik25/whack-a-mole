@@ -9,27 +9,28 @@
 </head>
 
 <body>
-    <div class="title">
-        <h1 class="title__h1">Whack A Mole Game</h1>
-    </div>
+    <h1 class="title">Whack A Mole Game</h1>
 
-    <div class="start">
-        <button class="start__btn" data-start-btn>
+    <div class="flex flex--spaceEvenly">
+        <button class="btn btn--start" data-start-btn>
             Start Game
         </button>
-    </div>
 
-    <div class="stop">
-        <button class="stop" data-stop-btn>
+        <button class="btn btn--stop" data-stop-btn>
             Stop Game
+        </button>
+
+        <button class="btn btn--reset" data-reset-btn>
+            Reset Game
         </button>
     </div>
 
 
-    <div class="timer" data-timer></div>
-    <div class="score" data-score></div>
-
     <div class="gameBoard">
+        <div class="gameBoard__dashboard flex flex--spaceEvenly">
+            <div class="score" data-score>Score 0</div>
+            <div class="gameBoard__timer" data-timer>Time Remaining</div>
+        </div>
         <div class="gameBoard__hole">
             <div class="gameBoard__mound">
             </div>
