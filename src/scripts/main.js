@@ -42,9 +42,9 @@
             timer.innerHTML = 'Game Over';
         } else {
             let mole = moles[Math.floor(Math.random() * moles.length)];
-            mole.style = 'transform: translate(0px, 37%);';
+            mole.classList.add('gameBoard__mole--moving');
             setTimeout(() => {
-                mole.style = 'transform: translate(0px, 77%);';
+                mole.classList.remove('gameBoard__mole--moving');
             }, 1000)
 
             timer.innerHTML = timeLeft + ' seconds remaining';

@@ -49,6 +49,10 @@ body {
     cursor: pointer;
  }
 
+.gameBoard__mole--moving {
+    transform: translate(0px, 37%);
+}
+
 /* Buttons */
 .btn {
     padding: 1rem;
